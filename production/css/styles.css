@@ -218,7 +218,7 @@ nav .icon-letter-green { width: 25px; height: 25px; background: url("../images/i
 .hotnews-slide .slide-news .bg-fire { padding-bottom: 1.9rem; background: url("../images/bg-fire.png") no-repeat 100%; background-position: bottom; }
 .hotnews-slide .item { background: #fff; }
 .hotnews-slide .item .info-news { padding: 1.1rem 1.42rem 1.42rem 1.42rem; }
-.hotnews-slide .item .info-news .title-item { padding-bottom: 1.42rem; font-size: 1.12rem; font-weight: bold; }
+.hotnews-slide .item .info-news .title-item { padding-bottom: 1.42rem; font-size: 1.12rem; font-weight: bold; height: 75px; overflow: hidden; }
 .hotnews-slide .item .info-news .info-item .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: bottom; }
 .hotnews-slide .item .info-news .info-item .category { font-size: 1.2rem; color: #00A231; padding-left: .5rem; }
 .hotnews-slide .owl-stage-outer { z-index: 9; }
@@ -244,6 +244,7 @@ nav .icon-letter-green { width: 25px; height: 25px; background: url("../images/i
 	MEDIUM DEVICE
 	Large tablet 992px and down (<992px)
 	================================================================== */
+@media screen and (max-width: 992px) { .hotnews-slide .item .info-news .title-item { height: 66px; } }
 /* 	================================================================
 	SMALL DEVICE
 	Large tablet 576px and up (>576px and <768px)

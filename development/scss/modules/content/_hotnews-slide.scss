@@ -50,6 +50,8 @@
 				padding-bottom: 1.42rem;
 				font-size: 1.12rem;
 				font-weight: bold;
+				height: 75px;
+				overflow: hidden;
 			}
 			.info-item{
 
@@ -141,7 +143,15 @@
 @media screen
 		and (max-width: $device-size-large)
 {
-	
+	.hotnews-slide {
+		.item {
+			.info-news {
+				.title-item{
+					height: 66px;
+				}
+			}
+		}
+	}
 }
 
 /* 	================================================================
