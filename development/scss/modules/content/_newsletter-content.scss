@@ -1,0 +1,14 @@
+.box-newsletter{
+  .icon-email-green{
+    @include setBackgroundIcon(30px, "../images/icon-letter-green.svg");
+    margin-right: .5rem;
+  }
+  .label-content{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .icon-left{
+    @include setBackgroundIcon(30px, "../images/icon-left.svg");
+    margin-right: .5rem;
+  }
+}

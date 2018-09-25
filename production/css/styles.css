@@ -628,6 +628,7 @@ nav .icon-letter-green { width: 25px; height: 25px; background: url("../images/i
 @media screen and (max-width: 425px) { .box-detail .news-vertizontal .thumb-verti { width: 50%; }
   .box-detail .box-social a[class*="btn-"] { margin-bottom: .5rem; } }
 /*================================END CSS CONTENT DETAIL================================*/
+/*========================== MODAL NOT MISS =================================*/
 #modal-notmiss .modal-content { padding: 2rem; }
 #modal-notmiss .modal-dialog { max-width: 1000px; }
 #modal-notmiss .label-related { font-size: 1.5rem; font-weight: bold; padding-bottom: 2rem; text-align: center; }
@@ -636,6 +637,11 @@ nav .icon-letter-green { width: 25px; height: 25px; background: url("../images/i
 #modal-notmiss .time-verti { color: #B7B7B7; }
 #modal-notmiss .time-verti .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .5rem; }
 #modal-notmiss .time-verti .icon-stopwatch { width: 20px; height: 20px; background: url("../images/icon-stopwatch.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .5rem; }
+
+/*========================== MODAL NOT MISS =================================*/
+.box-newsletter .icon-email-green { width: 30px; height: 30px; background: url("../images/icon-letter-green.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .5rem; }
+.box-newsletter .label-content { font-size: 2rem; font-weight: bold; }
+.box-newsletter .icon-left { width: 30px; height: 30px; background: url("../images/icon-left.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .5rem; }
 
 /* ========border bottom=============================== */
 .border-green-bottom { border: 1px dashed #00AD71; border-left: 0; border-right: 0; padding: 2px; }

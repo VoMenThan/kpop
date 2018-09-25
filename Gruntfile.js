@@ -102,6 +102,7 @@ module.exports = function(grunt) {
 		    	'development/index.html',
 		    	'development/category.html',
 		    	'development/detail.html',
+		    	'development/newsletter.html',
 		    	], // Source files
 		    dest: 'production/', // Destination directory
 		    flatten: true,
