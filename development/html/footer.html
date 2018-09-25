@@ -143,6 +143,8 @@
     <script src="js/video.js"></script>
     <script src="js/styles.min.js"></script>
     <script>
+
+        /*============ slide news =================*/
     	$(document).ready(function(){
 			$('.owl-carousel').owlCarousel({
 				loop:true,
@@ -165,11 +167,18 @@
 			})
 		});
 
+    	/*============auto open modal=================*/
+        $('#modal-notmiss').modal({
+            autoOpen: true
+        });
+
+        /*============ custom scroll =================*/
 		(function($){
 			$(window).on("load",function(){
 				$(".content-scroll").mCustomScrollbar({theme:"3d"});
 			});
 		})(jQuery);
+        /*============ end custom scroll =================*/
 
 
         function sticky_relocate() {

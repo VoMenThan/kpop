@@ -176,4 +176,25 @@
   }
 }
 
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen
+and (max-width: $device-size-mobile)
+{
+  .box-detail {
+    .news-vertizontal {
+      .thumb-verti{
+        width: 50%;
+      }
+    }
+    .box-social {
+      a[class*="btn-"]{
+        margin-bottom: .5rem;
+      }
+    }
+  }
+}
+
 /*================================END CSS CONTENT DETAIL================================*/

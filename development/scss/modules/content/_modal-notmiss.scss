@@ -1,0 +1,34 @@
+#modal-notmiss{
+  .modal-content{
+    padding: 2rem;
+  }
+  .modal-dialog{
+    max-width: 1000px;
+  }
+  .label-related{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    text-align: center;
+    .icon-smile{
+      @include setBackgroundIcon(20px, "../images/icon-smile.svg");
+      vertical-align: middle;
+    }
+  }
+  .title-news-verti{
+    font-size: 1.34rem;
+    font-weight: bold;
+    padding-bottom: .5rem;
+  }
+  .time-verti{
+    color: $color-gray-text;
+    .icon-calendar{
+      @include setBackgroundIcon(20px, "../images/icon-calendar.svg");
+      margin-right: .5rem;
+    }
+    .icon-stopwatch{
+      @include setBackgroundIcon(20px, "../images/icon-stopwatch.svg");
+      margin-right: .5rem;
+    }
+  }
+}

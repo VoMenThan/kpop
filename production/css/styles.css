@@ -375,7 +375,7 @@ nav .icon-letter-green { width: 25px; height: 25px; background: url("../images/i
 	MOBILE DEVICE
 	Large mobile 425px and down (<425px)
 	================================================================== */
-@media screen and (max-width: 425px) { .box-hotvideo .list-video { height: 320px; } }
+@media screen and (max-width: 425px) { .box-hotvideo .list-video { height: 300px; } }
 /* ====================== END HOT NEWS HOT VIDEO =========================== */
 /* ====================== HOT NEWS FOCUS =========================== */
 .box-focus .label-head { background-color: #FF6600; background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6600), to(#FF0000)); background-image: -webkit-linear-gradient(top, #FF6600, #FF0000); background-image: -moz-linear-gradient(top, #FF6600, #FF0000); background-image: -ms-linear-gradient(top, #FF6600, #FF0000); background-image: -o-linear-gradient(top, #FF6600, #FF0000); background-image: linear-gradient(top, #FF6600, #FF0000); filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#FF6600', end-colourStr='#FF0000'); }
@@ -621,7 +621,22 @@ nav .icon-letter-green { width: 25px; height: 25px; background: url("../images/i
 .box-detail .news-vertizontal .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; }
 .box-detail .news-vertizontal .icon-stopwatch { width: 20px; height: 20px; background: url("../images/icon-stopwatch.svg") no-repeat center; display: inline-block; background-size: 100%; }
 
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen and (max-width: 425px) { .box-detail .news-vertizontal .thumb-verti { width: 50%; }
+  .box-detail .box-social a[class*="btn-"] { margin-bottom: .5rem; } }
 /*================================END CSS CONTENT DETAIL================================*/
+#modal-notmiss .modal-content { padding: 2rem; }
+#modal-notmiss .modal-dialog { max-width: 1000px; }
+#modal-notmiss .label-related { font-size: 1.5rem; font-weight: bold; padding-bottom: 2rem; text-align: center; }
+#modal-notmiss .label-related .icon-smile { width: 20px; height: 20px; background: url("../images/icon-smile.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: middle; }
+#modal-notmiss .title-news-verti { font-size: 1.34rem; font-weight: bold; padding-bottom: .5rem; }
+#modal-notmiss .time-verti { color: #B7B7B7; }
+#modal-notmiss .time-verti .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .5rem; }
+#modal-notmiss .time-verti .icon-stopwatch { width: 20px; height: 20px; background: url("../images/icon-stopwatch.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .5rem; }
+
 /* ========border bottom=============================== */
 .border-green-bottom { border: 1px dashed #00AD71; border-left: 0; border-right: 0; padding: 2px; }
 
