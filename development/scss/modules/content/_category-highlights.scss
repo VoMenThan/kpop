@@ -1,0 +1,113 @@
+.box-category{
+  .box-header{
+    border-bottom: 2px solid $color-gray-border;
+    margin-bottom: 2rem;
+    .label-category{
+      span{
+        font-size: 2.14rem;
+        line-height: 40px;
+        font-weight: bold;
+        position: relative;
+        &:after{
+          content: "";
+          display: inline-block;
+          border-bottom: 2px solid $color-green;
+          width: 100%;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+        }
+      }
+    }
+    .category-related{
+      .nav-link{
+        color: $color-gray-text;
+        font-weight: bold;
+      }
+    }
+  }
+
+
+  .news-special {
+    .info-news {
+      .name-category{
+        color: $color-gray-text;
+        font-weight: 900;
+        font-size: 1.42rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+
+  .list-news-hori{
+    &.news-special-right{
+      .list-group-item{
+        border: none;
+        padding: 0;
+        padding-bottom: 1rem;
+      }
+      .thumb-hori{
+        float: left;
+        margin-right: 1rem;
+      }
+      .title-news-hori{
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      .name-category{
+        font-size: 1rem;
+        color: $color-gray-text;
+        font-weight: 900;
+      }
+      .box-content{
+        height: 135px;
+      }
+    }
+
+  }
+
+  .list-news-two-col {
+    .list-news-hori {
+      .list-group-item{
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 320px and down (<320px)
+	================================================================== */
+@media screen
+and (max-width: $device-size-ex-mobile)
+{
+  .box-category {
+    .box-header {
+      .label-category {
+        span{
+          font-size: 1.5rem;
+        }
+      }
+      .category-related {
+        .nav-link{
+          padding: .5rem;
+        }
+      }
+    }
+  }
+
+  .hotnews-slide {
+    .item {
+      .info-news {
+        .nav-link{
+          padding: .5rem;
+        }
+      }
+    }
+  }
+
+}

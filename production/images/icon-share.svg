@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.526 16.667">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b7b7b7;
+      }
+    </style>
+  </defs>
+  <g id="icon-share" transform="translate(-2.006)">
+    <g id="Group_301" data-name="Group 301" transform="translate(2.006)">
+      <path id="Path_423" data-name="Path 423" class="cls-1" d="M15.493,10.593a3.017,3.017,0,0,0-2.372,1.164L7.963,9.119a3.017,3.017,0,0,0,.116-.786,2.992,2.992,0,0,0-.138-.852l5.135-2.625a3.024,3.024,0,1,0-.618-1.82,3,3,0,0,0,.117.788L7.418,6.462a3.034,3.034,0,1,0,.045,3.689l5.133,2.625a3,3,0,0,0-.139.854,3.037,3.037,0,1,0,3.037-3.037Z" transform="translate(-2.006)"/>
+    </g>
+  </g>
+</svg>

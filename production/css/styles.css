@@ -1,0 +1,694 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+@font-face { font-family: 'Lato'; src: url("../fonts/Lato-Regular.eot"); src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg"), url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Lato'; src: url("../fonts/Lato-Bold.eot"); src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg"), url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Lato-Semibold'; src: url("../fonts/Lato-Semibold.eot"); src: url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.ttf") format("truetype"), url("../fonts/Lato-Semibold.svg#Lato-Semibold") format("svg"), url("../fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'SVN-Amethyst'; src: url("../fonts/SVN-Amethyst.eot"); src: url("../fonts/SVN-Amethyst.woff2") format("woff2"), url("../fonts/SVN-Amethyst.woff") format("woff"), url("../fonts/SVN-Amethyst.ttf") format("truetype"), url("../fonts/SVN-Amethyst.svg#SVN-Amethyst") format("svg"), url("../fonts/SVN-Amethyst.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'SegoeUI'; src: url("../fonts/SegoeUI.eot"); src: url("../fonts/SegoeUI.woff2") format("woff2"), url("../fonts/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI.ttf") format("truetype"), url("../fonts/SegoeUI.svg#SegoeUI") format("svg"), url("../fonts/SegoeUI.eot?#iefix") format("embedded-opentype"); font-weight: normal; font-style: normal; }
+/*define*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+p { margin-bottom: 10px; }
+
+a, a:hover { text-decoration: none; color: #343434; }
+
+a:hover, a.active { opacity: .8; }
+
+* { box-sizing: border-box; outline: none; }
+
+ul { padding: 0; margin: 0; }
+
+ul li { list-style-type: none; }
+
+* { font-family: "Roboto", sans-serif; font-size: 14px; }
+
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 1200px and down (<1200px)
+	================================================================== */
+@media screen and (max-width: 1200px) { * { font-size: 12px; } }
+/* =================== HEADER ======================= */
+header { padding-top: 30px; }
+header .header-logo { padding-bottom: 15px; }
+header .header-logo .box-input-search { right: 0; top: 50%; -webkit-transform: translate(0, -50%); -moz-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); }
+header .header-logo .box-input-search .btn-search { position: absolute; left: 9px; top: 6px; width: 20px; height: 20px; background: url("../images/icon-search.svg") no-repeat center; display: inline-block; background-size: 100%; }
+header .header-logo .box-input-search .input-search { -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; background: #F2F2F2; border: none; font-family: "SegoeUI", sans-serif; font-size: 1rem; padding: 5px; padding-left: 30px; opacity: .45; width: 240px; }
+
+/* =================== NAVIGATION ======================= */
+nav { border-top: 0.5px solid #B7B7B7; padding: 13px 0; padding-bottom: 8px; /* =================== SUB MENU ======================= */ }
+nav.stick { position: fixed; top: 0; left: 50%; -webkit-transform: translate(-50%); -moz-transform: translate(-50%); -ms-transform: translate(-50%); transform: translate(-50%); width: 100%; background: #fff; z-index: 99; -webkit-box-shadow: 4px 4px 18px #ccc; -moz-box-shadow: 4px 4px 18px #ccc; box-shadow: 4px 4px 18px #ccc; }
+nav ul.main-menu .nav-item .nav-link { font-size: 1rem; font-weight: bold; font-family: "Lato", sans-serif; color: #000; }
+nav ul.main-menu .nav-item .nav-link:hover, nav ul.main-menu .nav-item .nav-link.active { opacity: 0.5; }
+nav ul.main-menu .nav-item .nav-link .icon-menu { width: 25px; height: 25px; background: url("../images/icon-menu.png") no-repeat center; display: inline-block; background-size: 100%; }
+nav ul.main-menu .nav-item .nav-link[aria-expanded="true"] .icon-menu { width: 25px; height: 25px; background: url("../images/icon-close.png") no-repeat center; display: inline-block; background-size: auto; background-position: center center; }
+nav ul.main-menu .nav-item .nav-link.btn-menu { margin-top: -5px; }
+nav ul.main-menu .nav-item:first-child .nav-link { margin-top: -5px; }
+nav #detailMenuMain { z-index: 99; background: #333; position: absolute; top: calc(100% + 8px); left: 0; width: 100%; }
+nav #detailMenuMain .pd-menu-top { padding-top: 3.2rem; padding-bottom: 5rem; }
+nav #detailMenuMain .list-group .list-group-item { background: transparent; color: #A8A8A8; display: block; font-size: 14px; padding: .25rem .5rem; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+nav #detailMenuMain .list-group .list-group-item:first-child { color: #fff; text-transform: uppercase; border-left: 2px solid #00A231 !important; margin-bottom: 10px; }
+nav .icon-hot { width: 25px; height: 25px; background: url("../images/icon-fire-green.svg") no-repeat center; display: inline-block; background-size: 100%; }
+nav .icon-clock { width: 25px; height: 25px; background: url("../images/icon-clock.svg") no-repeat center; display: inline-block; background-size: 100%; }
+nav .icon-trend-green { width: 25px; height: 25px; background: url("../images/icon-trend-green.svg") no-repeat center; display: inline-block; background-size: 100%; }
+nav .icon-facebook { width: 25px; height: 25px; background: url("../images/icon-facebook.svg") no-repeat center; display: inline-block; background-size: 100%; }
+nav .icon-letter-green { width: 25px; height: 25px; background: url("../images/icon-letter-green.svg") no-repeat center; display: inline-block; background-size: 100%; }
+
+/* =================== TAGBAR ======================= */
+.box-tagbar { background: #4B4B4B; padding: 23px 0; margin-bottom: 4.2rem; }
+.box-tagbar ul.list-tagbar .nav-item .nav-link { background: #fff; color: #000; -webkit-border-radius: 25px; -moz-border-radius: 25px; border-radius: 25px; font-family: "Lato-Semibold", sans-serif; }
+.box-tagbar ul.list-tagbar .nav-item:first-child .nav-link { background: none; }
+.box-tagbar ul.list-tagbar .nav-item:last-child .nav-link { background: #00A231; color: #fff; padding: 13px 30px; }
+.box-tagbar ul.list-tagbar .nav-item .icon-mail { width: 37px; height: 22px; background: url("../images/icon-mail.png") no-repeat center; display: inline-block; background-size: 100%; position: relative; top: 5px; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+@media screen and (min-width: 1200px) { nav #detailMenuMain .reset-col-2 { -webkit-box-flex: 0; -ms-flex: 0 0 20%; flex: 0 0 20%; max-width: 20%; padding-bottom: 30px; } }
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen and (max-width: 992px) { header .header-logo .logo-kpop { width: 110px; }
+  header .header-logo .box-input-search .btn-search { width: 25px; height: 25px; top: 3px; left: 12px; background: url(../images/icon-search-green.svg) no-repeat center; }
+  header .header-logo .box-input-search .input-search { width: 0; -webkit-transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition: 0.3s ease-in-out; -o-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out; background: none; }
+  header .header-logo .box-input-search .input-search:hover { width: auto; background: #F2F2F2; -webkit-transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -ms-transition: 0.3s ease-in-out; -o-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out; opacity: 1; padding-left: 40px; }
+  nav { margin-bottom: 1.42rem; -webkit-box-shadow: 4px 4px 18px #ccc; -moz-box-shadow: 4px 4px 18px #ccc; box-shadow: 4px 4px 18px #ccc; }
+  nav ul.main-menu .nav-item .nav-link .icon-menu { background: url(../images/icon-menu-green.svg) no-repeat center; }
+  nav ul.main-menu .nav-item .nav-link[aria-expanded="true"] .icon-menu { background: url(../images/icon-close-green.svg) no-repeat center; }
+  nav ul.main-menu .nav-item .nav-link.btn-menu { padding-left: 0; margin-top: 0; }
+  nav ul.main-menu .nav-item:last-child .nav-link { margin-top: 0; padding-right: 0; } }
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen and (max-width: 425px) { nav ul.main-menu .nav-item .nav-link i[class*="icon"], nav ul.main-menu .nav-item .nav-link[aria-expanded="true"] i[class*="icon"] { width: 20px; height: 20px; } }
+/* ================SIDEBAR LEFT==================== */
+.sidebar-left { position: absolute; top: 0; border-top: 6px solid #00A231; padding-top: 5px; margin-left: -120px; z-index: 10; }
+.sidebar-left.stick { position: fixed; top: 100px; }
+.sidebar-left .menu-sidebar { -webkit-box-shadow: 4px 4px 18px #ccc; -moz-box-shadow: 4px 4px 18px #ccc; box-shadow: 4px 4px 18px #ccc; }
+.sidebar-left .menu-sidebar .list-group-item { border: none; padding: .5rem; font-family: "Lato", sans-serif; }
+.sidebar-left .menu-sidebar .list-group-item:after { content: ''; display: block; border-bottom: 1px solid #707070; }
+.sidebar-left .menu-sidebar i[class*="icon"] { display: block; margin: auto; margin-bottom: 5px; }
+.sidebar-left .menu-sidebar .icon-hot { width: 20px; height: 20px; background: url("../images/icon-hot.svg") no-repeat center; display: inline-block; background-size: 100%; }
+.sidebar-left .menu-sidebar .icon-clock { width: 20px; height: 20px; background: url("../images/icon-clock.svg") no-repeat center; display: inline-block; background-size: 100%; }
+.sidebar-left .menu-sidebar .icon-trend-green { width: 20px; height: 20px; background: url("../images/icon-trend-green.svg") no-repeat center; display: inline-block; background-size: 100%; }
+.sidebar-left .menu-sidebar .icon-facebook { width: 20px; height: 20px; background: url("../images/icon-facebook.svg") no-repeat center; display: inline-block; background-size: 100%; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+/* ================ END SIDEBAR LEFT==================== */
+/* ====================== HOT NEWS=========================== */
+.main-content .banner-advert { padding-bottom: 1.14rem; }
+
+/* ========== HOT NEWS ============= */
+.border-section { border-bottom: 1px dashed #00A231; margin-bottom: 2rem; }
+
+.news-special .thumb-news { width: 100%; }
+.news-special .title-news { font-weight: 900; font-size: 2.14rem; color: #000; padding-top: 1.14rem; padding-bottom: .71rem; }
+.news-special .excerpt-news { padding-bottom: .71rem; }
+.news-special .info-news { padding-bottom: 1.42rem; }
+.news-special .info-news .icon-calendar { width: 24px; height: 24px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: 10px; }
+.news-special .info-news .icon-stopwatch { width: 24px; height: 24px; background: url("../images/icon-stopwatch.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: 10px; margin-left: 15px; }
+.news-special.news-right .title-news { font-size: 1.42rem; font-weight: 700; color: #343434; }
+
+.list-3-news .thumb-news { width: 100%; }
+.list-3-news .title-news { font-size: 1.14rem; font-weight: 700; padding-top: 1.42rem; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen and (max-width: 992px) { .news-special .box-thumb-special { width: 50%; float: left; margin-right: 1rem; }
+  .news-special .title-news { font-size: 1.5rem; }
+  .news-special.news-right { padding-bottom: 1.25rem; }
+  .news-special.news-right .title-news { padding: 0; padding-left: 1.5rem; }
+  .list-3-news { padding-bottom: 1.25rem; padding-top: 1.25rem; border-top: 0.5px solid #707070; }
+  .list-3-news .box-thumb { width: 30%; float: left; margin-right: 1rem; }
+  .list-3-news .thumb-news { width: auto; }
+  .list-3-news .title-news { padding-top: 0; padding-left: .8rem; } }
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen and (max-width: 425px) { .list-3-news .title-news { font-size: 1rem; }
+  .list-3-news .box-thumb { width: 40%; } }
+/* ====================== END HOT NEWS =========================== */
+/* ====================== HOT NEWS SLIDE =========================== */
+.box-has-label .label-head { background-color: #FF0000; background-image: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#000000)); background-image: -webkit-linear-gradient(top, #FF0000, #000000); background-image: -moz-linear-gradient(top, #FF0000, #000000); background-image: -ms-linear-gradient(top, #FF0000, #000000); background-image: -o-linear-gradient(top, #FF0000, #000000); background-image: linear-gradient(top, #FF0000, #000000); filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#FF0000', end-colourStr='#000000'); height: 1.12rem; width: 100%; margin-bottom: .4rem; position: relative; }
+.box-has-label .label-head .label-img { display: inline-block; position: absolute; top: -25px; left: -25px; z-index: 9; }
+
+.hotnews-slide .slide-news { background-color: #FF0000; background-image: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#000000)); background-image: -webkit-linear-gradient(top, #FF0000, #000000); background-image: -moz-linear-gradient(top, #FF0000, #000000); background-image: -ms-linear-gradient(top, #FF0000, #000000); background-image: -o-linear-gradient(top, #FF0000, #000000); background-image: linear-gradient(top, #FF0000, #000000); filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#FF0000', end-colourStr='#000000'); padding: 0; position: relative; margin-bottom: 1rem; }
+.hotnews-slide .slide-news .view-more { padding: 1.42rem 0; text-align: right; padding-right: 1.1rem; }
+.hotnews-slide .slide-news .view-more .btn-view-more { color: #fff; font-size: 1.12rem; font-weight: bold; }
+.hotnews-slide .slide-news .view-more .icon-arrow-right { width: 5px; height: 10px; background: url("../images/icon-arrow-right.svg") no-repeat center; display: inline-block; background-size: 100%; }
+.hotnews-slide .slide-news .bg-fire { padding-bottom: 1.9rem; background: url("../images/bg-fire.png") no-repeat 100%; background-position: bottom; }
+.hotnews-slide .item { background: #fff; }
+.hotnews-slide .item .info-news { padding: 1.1rem 1.42rem 1.42rem 1.42rem; }
+.hotnews-slide .item .info-news .title-item { padding-bottom: 1.42rem; font-size: 1.12rem; font-weight: bold; }
+.hotnews-slide .item .info-news .info-item .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: bottom; }
+.hotnews-slide .item .info-news .info-item .category { font-size: 1.2rem; color: #00A231; padding-left: .5rem; }
+.hotnews-slide .owl-stage-outer { z-index: 9; }
+.hotnews-slide .owl-nav { position: absolute; top: calc(50% - 25px); left: -10%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-between; -webkit-justify-content: space-between; -ms-flex-pack: space-between; justify-content: space-between; width: 120%; z-index: 8; }
+.hotnews-slide .owl-nav .owl-prev, .hotnews-slide .owl-nav .owl-next { background: #fff !important; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; width: 47px; height: 47px; outline: none; }
+.hotnews-slide .btn-prev-slide { width: 100%; height: 100%; background: url("../images/icon-arrow-left-orange.svg") no-repeat center; display: inline-block; background-size: 100%; background-position: center center; -webkit-background-size: 13px; background-size: 13px; }
+.hotnews-slide .btn-next-slide { width: 100%; height: 100%; background: url("../images/icon-arrow-right-orange.svg") no-repeat center; display: inline-block; background-size: 100%; background-position: center center; -webkit-background-size: 13px; background-size: 13px; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+@media screen and (min-width: 576px) and (max-width: 768px) { .hotnews-slide .owl-nav { left: -15%; width: 129%; } }
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+@media screen and (min-width: 425px) and (max-width: 576px) { .hotnews-slide .owl-nav { left: -15%; width: 129%; } }
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen and (max-width: 425px) { .hotnews-slide .owl-nav { top: calc(50% - 15px); left: -19%; width: 138%; }
+  .hotnews-slide .owl-nav .owl-next, .hotnews-slide .owl-nav .owl-prev { width: 30px; height: 30px; } }
+/* ====================== END HOT NEWS SLIDE =========================== */
+.hotnews-video .label-head { background-color: #FFF700; background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF700), to(#00A800)); background-image: -webkit-linear-gradient(top, #FFF700, #00A800); background-image: -moz-linear-gradient(top, #FFF700, #00A800); background-image: -ms-linear-gradient(top, #FFF700, #00A800); background-image: -o-linear-gradient(top, #FFF700, #00A800); background-image: linear-gradient(top, #FFF700, #00A800); filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#FFF700', end-colourStr='#00A800'); }
+.hotnews-video .title-video { font-weight: 900; font-size: 2.14rem; color: #000; padding-top: 1.14rem; padding-bottom: .71rem; }
+.hotnews-video .info-video { padding-bottom: 1.42rem; }
+.hotnews-video .info-video .icon-calendar { width: 24px; height: 24px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .2rem; vertical-align: middle; }
+.hotnews-video .info-video .excerpt-video { padding-bottom: .71rem; }
+.hotnews-video .info-video .icon-stopwatch { width: 24px; height: 24px; background: url("../images/icon-stopwatch.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .2rem; margin-left: 1rem; vertical-align: middle; }
+.hotnews-video .list-video { height: 670px; margin-bottom: 2rem; }
+.hotnews-video .list-video .list-group-item { padding: 0; }
+.hotnews-video .list-video .list-group-item .card-body { padding-top: 1rem; padding-bottom: 2rem; }
+.hotnews-video .list-video .list-group-item .card-text { font-weight: bold; }
+.hotnews-video .list-video .mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color: #46BC93; }
+.hotnews-video .list-video .mCS-3d.mCSB_scrollTools .mCSB_draggerRail { background-color: #4E4E4E; }
+
+/* ========== LIST NEWS HAVE TIME, CATEGORY =============== */
+.list-news-two-col .list-news-hori .list-group-item { margin-right: 5rem; padding: 1rem 0; border: none; border-top: 1px solid #707070; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; margin-bottom: 0; }
+.list-news-two-col .list-news-hori .list-group-item .thumb-hori { width: 154px; float: left; margin-right: 1rem; }
+.list-news-two-col .list-news-hori .list-group-item .set-height-news { height: 111px; }
+.list-news-two-col .list-news-hori .list-group-item .title-news-hori { font-size: 1.28rem; line-height: 29px; font-weight: 700; }
+.list-news-two-col .list-news-hori .list-group-item .time-hori .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: middle; margin-bottom: .5rem; }
+.list-news-two-col .list-news-hori .list-group-item .category-hori { font-size: 1.28rem; line-height: 20px; font-weight: bold; color: #00A231; }
+.list-news-two-col .list-news-hori .list-group-item:first-child { margin-right: 0; border-top: none; }
+.list-news-two-col .list-news-hori .list-group-item:first-child .thumb-hori { width: 239px; }
+.list-news-two-col .list-news-hori .list-group-item:first-child .title-news-hori { font-size: 1.71rem; }
+.list-news-two-col .list-news-hori .list-group-item:first-child .set-height-news { height: 173px; }
+.list-news-two-col .list-news-hori .list-group-item:last-child { border-bottom: 1px solid #707070; }
+.list-news-two-col .btn-view-more { padding-right: 5rem; }
+.list-news-two-col .label-news-hot { font-size: 1.42rem; font-weight: 700; padding-bottom: .5rem; border-bottom: 5px solid #FF6600; }
+.list-news-two-col .label-news-hot .icon-burn { width: 35px; height: 35px; background: url("../images/icon-fire.png") no-repeat center; display: inline-block; background-size: 100%; vertical-align: bottom; }
+
+/* ========== LIST NEWS ONLY TITLE AND IMAGE =============== */
+.list-news-only .list-group-item { padding-right: 0; padding-left: 0; border: none; border-bottom: 1px solid #707070; margin-bottom: 0; border-radius: 0; }
+.list-news-only .thumb-hori { width: 70px; float: left; margin-right: 1rem; }
+.list-news-only .thumb-hori img { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 4px 4px 18px #ccc; -moz-box-shadow: 4px 4px 18px #ccc; box-shadow: 4px 4px 18px #ccc; }
+.list-news-only .title-news-hori { font-size: 1.12rem; font-weight: bold; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen and (max-width: 992px) { .hotnews-video .title-video { font-size: 1.5rem; }
+  .hotnews-video .list-video { height: 325px; }
+  .hotnews-video .list-video .box-thumb { float: left; width: 45%; margin-right: .5rem; }
+  .hotnews-video .list-video .list-group-item { padding: .5rem .25rem; }
+  .hotnews-video .list-video .list-group-item .card { display: block; }
+  .hotnews-video .list-video .list-group-item .card-body { display: block; padding: 0; } }
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen and (max-width: 425px) { .list-news-two-col .list-news-hori .list-group-item { margin-right: 0; }
+  .list-news-two-col .list-news-hori .list-group-item .thumb-hori { width: 130px; }
+  .list-news-two-col .list-news-hori .list-group-item .set-height-news { height: 93px; }
+  .list-news-two-col .list-news-hori .list-group-item .title-news-hori { font-size: 1.3rem; line-height: 19px; }
+  .list-news-two-col .list-news-hori .list-group-item:first-child .thumb-hori { width: 150px; }
+  .list-news-two-col .list-news-hori .list-group-item:first-child .set-height-news { height: 108px; }
+  .list-news-two-col .list-news-hori .list-group-item:first-child .title-news-hori { font-size: 1.3rem; line-height: 19px; }
+  .list-news-two-col .btn-view-more { padding-right: 0; }
+  .list-news-only .thumb-hori { width: 150px; } }
+/* ================ END SIDEBAR LEFT==================== */
+/* ====================== HOT NEWS HOT VIDEO =========================== */
+.box-hotvideo .list-video { height: 500px; }
+.box-hotvideo .label-news-hot-video { font-size: 1.42rem; font-weight: 700; padding-bottom: .5rem; border-bottom: 5px solid #FF6600; margin-bottom: 2rem; }
+.box-hotvideo .label-news-hot-video .icon-burn { width: 35px; height: 35px; background: url("../images/icon-fire.png") no-repeat center; display: inline-block; background-size: 100%; vertical-align: bottom; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen and (max-width: 425px) { .box-hotvideo .list-video { height: 320px; } }
+/* ====================== END HOT NEWS HOT VIDEO =========================== */
+/* ====================== HOT NEWS FOCUS =========================== */
+.box-focus .label-head { background-color: #FF6600; background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6600), to(#FF0000)); background-image: -webkit-linear-gradient(top, #FF6600, #FF0000); background-image: -moz-linear-gradient(top, #FF6600, #FF0000); background-image: -ms-linear-gradient(top, #FF6600, #FF0000); background-image: -o-linear-gradient(top, #FF6600, #FF0000); background-image: linear-gradient(top, #FF6600, #FF0000); filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#FF6600', end-colourStr='#FF0000'); }
+.box-focus .icon-video-camera { width: 25px; height: 25px; background: url("../images/icon-video-camera.svg") no-repeat center; display: inline-block; background-size: 100%; }
+.box-focus .btn-facebook { background: #22589E; width: 85px; display: inline-block; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #fff; margin-left: 20px; }
+.box-focus .btn-facebook .icon-facebook { width: 20px; height: 20px; background: url("../images/icon-fb.svg") no-repeat center; display: inline-block; background-size: 100%; background-size: auto 100%; vertical-align: middle; }
+
+.list-news-focus .icon-video-camera { position: absolute; bottom: 20px; right: 50px; }
+.list-news-focus .news-horizontal { padding-bottom: 1rem; padding-top: 1rem; border-bottom: 1px solid #707070; }
+.list-news-focus .thumb-hori { width: 154px; float: left; margin-right: 1rem; }
+.list-news-focus .set-height-news { height: 111px; }
+.list-news-focus .title-news-hori { font-size: 1.28rem; line-height: 29px; font-weight: 700; }
+.list-news-focus .time-hori .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: middle; margin-bottom: .5rem; }
+.list-news-focus .category-hori { font-size: 1.28rem; line-height: 20px; font-weight: bold; color: #00A231; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen and (max-width: 425px) { .list-news-focus .title-news-hori { line-height: 19px; }
+  .list-news-focus .icon-video-camera { bottom: 40px; right: 30px; }
+  .list-news-focus .icon-video-camera { width: 20px; height: 20px; } }
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 320px and down (<320px)
+	================================================================== */
+@media screen and (max-width: 320px) { .list-news-focus .thumb-hori { width: 130px; line-height: 19px; } }
+/* ====================== END HOT NEWS FOCUS =========================== */
+/* ================FUNNY===================== */
+.box-funny .label-head { background-color: #FFD500; background-image: -webkit-gradient(linear, left top, left bottom, from(#FFD500), to(#A26700)); background-image: -webkit-linear-gradient(top, #FFD500, #A26700); background-image: -moz-linear-gradient(top, #FFD500, #A26700); background-image: -ms-linear-gradient(top, #FFD500, #A26700); background-image: -o-linear-gradient(top, #FFD500, #A26700); background-image: linear-gradient(top, #FFD500, #A26700); filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#FFD500', end-colourStr='#A26700'); }
+.box-funny .icon-video-camera { width: 25px; height: 25px; background: url("../images/icon-video-camera.svg") no-repeat center; display: inline-block; background-size: 100%; }
+.box-funny .label-news-hot { border-bottom: 0; }
+.box-funny .list-news-two-col .list-news-hori .list-group-item:last-child { border-bottom: 0; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+/* ================ END FUNNY===================== */
+/* =============== RADIO ===================== */
+.box-radio .video-news { padding-bottom: 1rem; }
+.box-radio .video-news a, .box-radio .video-news .title-video, .box-radio .video-news .excerpt-video, .box-radio .video-news .info-video { color: #fff; }
+.box-radio .label-img { position: absolute; top: -41px; left: -28px; z-index: 9; }
+.box-radio .info-video .icon-calendar-white { width: 24px; height: 24px; background: url("../images/icon-calendar-white.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .2rem; vertical-align: middle; }
+.box-radio .info-video .icon-stopwatch-white { width: 24px; height: 24px; background: url("../images/icon-stopwatch-white.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .2rem; margin-left: 1rem; vertical-align: middle; }
+.box-radio .list-video { height: 500px; }
+.box-radio .box-video-pink { background-color: #FFBFE3; background-image: -webkit-gradient(linear, left top, left bottom, from(#FFBFE3), to(#C982C5)); background-image: -webkit-linear-gradient(top, #FFBFE3, #C982C5); background-image: -moz-linear-gradient(top, #FFBFE3, #C982C5); background-image: -ms-linear-gradient(top, #FFBFE3, #C982C5); background-image: -o-linear-gradient(top, #FFBFE3, #C982C5); background-image: linear-gradient(top, #FFBFE3, #C982C5); filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#FFBFE3', end-colourStr='#C982C5'); padding-top: 3.5rem; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 4px 4px 18px #ccc; -moz-box-shadow: 4px 4px 18px #ccc; box-shadow: 4px 4px 18px #ccc; }
+.box-radio .list-group-item { background: transparent; }
+.box-radio .list-group-item .card { background: transparent; }
+.box-radio .list-video .mCS-3d.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color: #fff; }
+.box-radio .list-video .mCS-3d.mCSB_scrollTools .mCSB_draggerRail { background-color: #FF00A1; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen and (max-width: 425px) { .box-radio .list-video { height: 320px; } }
+/* =============== END RADIO ===================== */
+/* ====================== HOT NEWS RELATED =========================== */
+.hotnews-related { margin-bottom: 2rem; padding-bottom: 2rem; }
+
+.list-news-three-col .list-news-verti .list-group-item { border: 0; padding: 0; border-bottom: 1px solid #707070; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem; }
+.list-news-three-col .list-news-verti .list-group-item .title-news-verti { font-size: 1.12rem; font-weight: bold; }
+.list-news-three-col .list-news-verti .list-group-item .thumb-verti { float: left; margin-right: 1rem; }
+.list-news-three-col .list-news-verti .list-group-item:first-child .thumb-verti { margin-right: 0; float: none; }
+.list-news-three-col .list-news-verti .list-group-item:first-child .thumb-verti img { width: 100%; }
+.list-news-three-col .list-news-verti .list-group-item:first-child .title-news-verti { font-size: 1.28rem; padding-bottom: 2rem; padding-top: 1rem; }
+.list-news-three-col .list-news-verti .list-group-item:first-child .time-verti .icon-calendar { width: 24px; height: 24px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: .2rem; vertical-align: bottom; }
+.list-news-three-col .list-news-verti .list-group-item:last-child { border-bottom: 0; }
+.list-news-three-col .label-news-related { font-weight: 700; border-bottom: 5px solid #00A231; }
+.list-news-three-col .label-news-related span { display: inline-block; font-size: 1.42rem; position: relative; }
+.list-news-three-col .label-news-related span:after { content: ""; display: inline-block; border-bottom: 5px solid #B7B7B7; box-sizing: border-box; height: 5px; width: 100%; position: absolute; left: 0; bottom: -5px; z-index: 10; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+/* ====================== HOT NEWS RELATED =========================== */
+.box-category .box-header { border-bottom: 2px solid #707070; margin-bottom: 2rem; }
+.box-category .box-header .label-category span { font-size: 2.14rem; line-height: 40px; font-weight: bold; position: relative; }
+.box-category .box-header .label-category span:after { content: ""; display: inline-block; border-bottom: 2px solid #00A231; width: 100%; position: absolute; bottom: -2px; left: 0; }
+.box-category .box-header .category-related .nav-link { color: #B7B7B7; font-weight: bold; }
+.box-category .news-special .info-news .name-category { color: #B7B7B7; font-weight: 900; font-size: 1.42rem; padding-right: 1rem; }
+.box-category .list-news-hori.news-special-right .list-group-item { border: none; padding: 0; padding-bottom: 1rem; }
+.box-category .list-news-hori.news-special-right .thumb-hori { float: left; margin-right: 1rem; }
+.box-category .list-news-hori.news-special-right .title-news-hori { font-size: 1rem; font-weight: bold; }
+.box-category .list-news-hori.news-special-right .name-category { font-size: 1rem; color: #B7B7B7; font-weight: 900; }
+.box-category .list-news-hori.news-special-right .box-content { height: 135px; }
+.box-category .list-news-two-col .list-news-hori .list-group-item:last-child { border-bottom: none; }
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 320px and down (<320px)
+	================================================================== */
+@media screen and (max-width: 320px) { .box-category .box-header .label-category span { font-size: 1.5rem; }
+  .box-category .box-header .category-related .nav-link { padding: .5rem; }
+  .hotnews-slide .item .info-news .nav-link { padding: .5rem; } }
+/*============CATEGORY SLIDE TOP PAGE========*/
+.box-slide-category .label-news-hot { font-size: 2.1rem; font-weight: 900; padding-bottom: .5rem; border-bottom: 5px solid #FF6600; text-align: center; margin-bottom: 1rem; }
+.box-slide-category .label-news-hot .icon-burn { width: 35px; height: 35px; background: url("../images/icon-fire.png") no-repeat center; display: inline-block; background-size: 100%; }
+.box-slide-category.hotnews-slide .slide-news { background: transparent; }
+.box-slide-category.hotnews-slide .owl-nav .owl-prev, .box-slide-category.hotnews-slide .owl-nav .owl-next { -webkit-box-shadow: 4px 4px 18px #ccc; -moz-box-shadow: 4px 4px 18px #ccc; box-shadow: 4px 4px 18px #ccc; }
+.box-slide-category.hotnews-slide .icon-view { width: 16px; height: 16px; background: url("../images/icon-view.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: middle; }
+.box-slide-category.hotnews-slide .icon-like { width: 16px; height: 16px; background: url("../images/icon-like.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: middle; }
+.box-slide-category.hotnews-slide .icon-share { width: 16px; height: 16px; background: url("../images/icon-share.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: middle; }
+.box-slide-category .list-news-focus .box-item-news:last-child .news-horizontal { border-bottom: none; }
+
+/*============END CATEGORY SLIDE TOP PAGE========*/
+.box-cate-kpop .list-news-focus .news-horizontal:last-child { border-bottom: none; }
+
+/*================================CSS CONTENT DETAIL================================*/
+.box-detail .label-category .icon-next-green { width: 20px; height: 20px; background: url("../images/icon-next-green.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: 1rem; margin-left: 1rem; }
+.box-detail .label-category .sub-title { font-size: 2.1rem; font-weight: bold; color: #B7B7B7; }
+.box-detail h1 { font-size: 2.1rem; font-weight: 900; }
+.box-detail .info-news { padding: 1rem 0; }
+.box-detail .info-news .name-category { font-size: 1.42rem; color: #B7B7B7; padding-right: 1rem; }
+.box-detail .info-news .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: 1rem; margin-left: .5rem; vertical-align: middle; }
+.box-detail .info-news .icon-stopwatch { width: 20px; height: 20px; background: url("../images/icon-stopwatch.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: 1rem; margin-left: .5rem; vertical-align: middle; }
+.box-detail .box-related .title-related { font-size: 1.14rem; font-weight: bold; line-height: 19px; text-transform: uppercase; border-bottom: 0.5px solid #707070; padding-bottom: .5rem; }
+.box-detail .box-related .list-news-related .item-relate { padding: 5px 0; }
+.box-detail .box-related .list-news-related .item-relate a { font-weight: bold; line-height: 19px; }
+.box-detail .box-related .list-news-related .item-relate .icon-circle { display: inline-block; width: 10px; height: 10px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; background: #00A231; margin-right: 5px; }
+.box-detail .detail-special img { padding-bottom: 1rem; }
+.box-detail .detail-special .box-img .title-img { font-weight: bold; text-align: center; }
+.box-detail .detail-special p { font-size: 1.14rem; }
+.box-detail .detail-special p.excerpt { font-weight: bold; }
+.box-detail .detail-special p.excerpt { font-weight: bold; }
+.box-detail .detail-special p.author { font-weight: bold; text-align: right; }
+.box-detail .detail-special p .icon-pen { width: 20px; height: 20px; background: url("../images/icon-pen.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: middle; }
+.box-detail .box-social a[class*="btn-"] { background: #0C5298; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; padding: .3rem 2rem; margin-right: 1rem; color: #fff; font-weight: bold; }
+.box-detail .box-social a.btn-zalo { background: #0DC5EB; }
+.box-detail .list-tagbar { padding: 1rem 0; }
+.box-detail .list-tagbar .nav-link { -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; border: 1px solid #00A231; }
+.box-detail .title-miss-read { font-size: 1.4rem; padding-bottom: .5rem; border-bottom: 5px solid #00A231; font-weight: bold; }
+.box-detail .title-miss-read .icon-smile { width: 20px; height: 20px; background: url("../images/icon-smile.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: 1rem; }
+.box-detail .box-title-related { text-transform: uppercase; font-weight: bold; font-size: 1.14rem; border-bottom: 0.5px solid #707070; }
+.box-detail .list-news-three-col .box-content { height: 112px; }
+.box-detail .list-news-three-col .thumb-verti { float: left; margin-right: .5rem; }
+.box-detail .list-news-three-col .title-news-verti { font-size: 1.2rem; font-weight: bold; }
+.box-detail .label-related { font-size: 1.8rem; font-weight: bold; text-align: center; border-bottom: 2px solid #00A231; margin-bottom: 1rem; }
+.box-detail .news-vertizontal .thumb-verti { padding-bottom: 1rem; }
+.box-detail .news-vertizontal .title-news-verti { padding-bottom: 1rem; }
+.box-detail .news-vertizontal .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; }
+.box-detail .news-vertizontal .icon-stopwatch { width: 20px; height: 20px; background: url("../images/icon-stopwatch.svg") no-repeat center; display: inline-block; background-size: 100%; }
+
+/*================================END CSS CONTENT DETAIL================================*/
+/* ========border bottom=============================== */
+.border-green-bottom { border: 1px dashed #00AD71; border-left: 0; border-right: 0; padding: 2px; }
+
+/* ================= Tagbar footer==================== */
+.tagbar-footer { background: none; }
+.tagbar-footer ul.list-tagbar .nav-item .nav-link { border: 1px solid #00AD71; }
+.tagbar-footer ul.list-tagbar .nav-item .box-input-search { position: relative; }
+.tagbar-footer ul.list-tagbar .nav-item .box-input-search .btn-search { position: absolute; left: 9px; top: 6px; width: 20px; height: 20px; background: url("../images/icon-search.svg") no-repeat center; display: inline-block; background-size: 100%; }
+.tagbar-footer ul.list-tagbar .nav-item .box-input-search .input-search { -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; background: #F2F2F2; border: none; font-family: "SegoeUI", sans-serif; font-size: 1rem; padding: 5px; padding-left: 30px; opacity: .45; width: 240px; }
+
+/* ============LOGO FOOTER================ */
+.logo-footer { padding-top: 50px; padding-bottom: 25px; }
+
+/* ======================FOOTER============== */
+footer { background: #000; border-top: 2px solid #00A231; padding-top: 100px; padding-bottom: 70px; }
+footer a, footer p { color: #fff; }
+footer .box-office { padding-bottom: 40px; }
+footer .box-office h3 { color: #00A231; font-size: 18px; line-height: 22px; font-weight: bold; font-family: "Roboto", sans-serif; padding-bottom: 5px; }
+footer .box-office p { font-family: "SegoeUI", sans-serif; padding-bottom: 5px; }
+footer .box-office a { display: block; }
+footer .icon-mail { width: 19px; height: 19px; background: url("../images/icon-email.svg") no-repeat center; display: inline-block; background-size: 100%; float: left; margin-right: 5px; }
+footer .icon-phone { width: 19px; height: 19px; background: url("../images/icon-phone.svg") no-repeat center; display: inline-block; background-size: 100%; float: left; margin-right: 5px; }
+footer .count-like { background: #fff; padding: 15px; border: 1px solid #707070; margin-bottom: 10px; }
+footer .count-like .box-logo { display: inline-block; width: 70px; padding: 20px 10px; border: 1px solid #000; float: left; margin-right: 15px; }
+footer .count-like .title-news { display: block; text-transform: uppercase; font-size: 18px; font-weight: 700; color: #00A231; }
+footer .count-like .number-like { display: block; color: #B7B7B7; padding-top: 20px; }
+footer .btn-like { background: #fff; display: inline-block; color: #000; border: 1px solid #707070; width: 117px; margin-bottom: 22px; padding: 5px; }
+footer .btn-like span { float: left; margin-right: 5px; padding: 3px; background: #0C5298; }
+footer .btn-like .icon-fb { width: 18px; height: 18px; background: url("../images/icon-fb.svg") no-repeat center; display: inline-block; background-size: auto 100%; float: left; }
+footer .box-newletter { border: 1px solid #00A231; padding: 15px; }
+footer .box-newletter .nav-link { text-decoration: underline; }
+footer .box-newletter .icon-facebook { width: 20px; height: 20px; background: url("../images/icon-facebook.svg") no-repeat center; display: inline-block; background-size: auto 100%; display: block; margin: auto; }
+footer .box-newletter .icon-messenger { width: 20px; height: 20px; background: url("../images/icon-messenger.svg") no-repeat center; display: inline-block; background-size: auto 100%; display: block; margin: auto; }
+footer .box-newletter .icon-zalo { width: 20px; height: 20px; background: url("../images/icon-zalo.svg") no-repeat center; display: inline-block; background-size: auto 100%; display: block; margin: auto; }
+footer .box-newletter .icon-paper-plane { width: 30px; height: 30px; background: url("../images/icon-paper-plane.svg") no-repeat center; display: inline-block; background-size: 100%; float: left; margin-right: 20px; }
+footer .box-newletter .btn-success { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; background: #00A231; }
+
+/* =================== RESPONSIVE ======================= */
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen and (max-width: 992px) { .logo-footer .logo-kpop { width: 110px; }
+  .tagbar-footer .box-search-footer { margin: auto; margin-top: 2rem; } }
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+
+/*# sourceMappingURL=styles.css.map */

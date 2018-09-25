@@ -1,0 +1,320 @@
+/* =================== HEADER ======================= */
+header{
+	padding-top: 30px;
+	.header-logo{
+		padding-bottom: 15px;
+		.logo-kpop{
+			
+		}
+		.box-input-search{
+			right: 0;
+			top: 50%;
+			@include translate(0, -50%);
+			.btn-search{
+				position: absolute;
+				left: 9px;
+				top: 6px;
+				@include setBackgroundIcon(20px, '../images/icon-search.svg');
+			}
+			.input-search{
+				@include border-radius(15px);
+				background: $color-gray-input;
+			    border: none;
+			    font-family: $font-segoeui;
+			    font-size: 1rem;
+			    padding: 5px;
+			    padding-left: 30px;
+			    opacity: .45;
+			    width: 240px;
+			}
+		}
+	}
+}
+/* =================== NAVIGATION ======================= */
+nav{
+	border-top: .5px solid $color-gray-text;
+	padding: 13px 0;
+	padding-bottom: 8px;
+	&.stick{
+		position: fixed;
+		top: 0;
+		left: 50%;
+		@include translate-x(-50%);
+		width: 100%;
+		background: $color-white;
+		z-index: 99;
+		@include shadow-out(4px, 4px, 18px, #ccc);
+	}
+	ul.main-menu{
+		.nav-item{
+			.nav-link{
+				font-size: 1rem;
+				font-weight: bold;
+				font-family: $font-menu;
+				color: $color-black;
+				&:hover, &.active{
+					opacity: 0.5;
+				}
+				.icon-menu{
+					@include setBackgroundIcon(25px, '../images/icon-menu.png');
+				}
+				&[aria-expanded="true"]{
+					.icon-menu{
+						@include setBackgroundIcon(25px, '../images/icon-close.png',25px , auto);
+						background-position: center center;
+
+					}
+				}
+				&.btn-menu{
+					margin-top: -5px;
+				}
+			}
+
+			&:first-child{
+				.nav-link{
+					margin-top: -5px;
+				}
+			}
+		}
+	}
+/* =================== SUB MENU ======================= */
+	#detailMenuMain{
+		z-index: 99;
+		background: #333;
+		position: absolute;
+		top: calc(100% + 8px);
+		left:  0;
+		width: 100%;
+		.pd-menu-top{
+			padding-top: 3.2rem;
+			padding-bottom:  5rem;
+		}
+		.list-group{
+			.list-group-item{
+				background: transparent;
+				color: #A8A8A8;
+				display: block;
+				font-size: 14px;
+				padding: .25rem .5rem;
+				@include border-radius(0);
+				&:first-child{
+					color: $color-white;
+					text-transform: uppercase;
+					border-left: 2px solid $color-green !important;
+					margin-bottom: 10px;
+				}		
+			}
+			
+		}
+		
+	}
+	.icon-hot{
+		@include setBackgroundIcon(25px, '../images/icon-fire-green.svg');
+	}
+	.icon-clock{
+		@include setBackgroundIcon(25px, '../images/icon-clock.svg');
+	}
+	.icon-trend-green{
+		@include setBackgroundIcon(25px, '../images/icon-trend-green.svg');
+	}
+	.icon-facebook{
+		@include setBackgroundIcon(25px, '../images/icon-facebook.svg');
+	}
+	.icon-letter-green{
+		@include setBackgroundIcon(25px, '../images/icon-letter-green.svg');
+	}
+}
+
+/* =================== TAGBAR ======================= */
+.box-tagbar{
+	background: #4B4B4B;
+	padding: 23px 0;
+	margin-bottom: 4.2rem;
+	ul.list-tagbar{
+		.nav-item{
+			.nav-link{
+				background: $color-white;
+				color: $color-black;
+				@include border-radius(25px);
+				font-family: $font-lato-semibold;
+			}
+			&:first-child{
+				.nav-link{
+					background: none;
+				}
+			}
+			&:last-child{
+				.nav-link{
+					background: $color-green;
+					color: $color-white;
+					padding: 13px 30px;
+
+				}
+			}
+			.icon-mail{
+				@include setBackgroundIcon(37px , "../images/icon-mail.png", 22px);
+				position: relative;
+				top: 5px;
+			}
+		}
+	}
+}
+
+/* =================== RESPONSIVE ======================= */
+
+
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-extra-large) 
+{
+	nav {
+		#detailMenuMain {
+			.reset-col-2{
+				@include flex(20%);
+				max-width:  20%;
+				padding-bottom: 30px;
+			}
+		}
+	}
+}
+
+
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-large) 
+		and (max-width: $device-size-extra-large) 
+{
+
+}
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen 
+		and (max-width: $device-size-large) 
+{
+
+	header {
+		.header-logo {
+			.logo-kpop{
+				width: 110px;
+			}
+			.box-input-search {
+				.btn-search{
+					width: 25px;
+					height: 25px;
+					top: 3px;
+					left: 12px;
+					background: url(../images/icon-search-green.svg) no-repeat center;
+				}
+				.input-search{
+					width: 0;
+					@include transitionInOut();
+					background: none;
+					&:hover{
+						width: auto;
+						background: $color-gray-input;
+						@include transitionInOut();
+						opacity: 1;
+						padding-left: 40px;
+					}
+				}
+			}
+		}
+	}
+	nav {
+		margin-bottom: 1.42rem;
+		@include shadow-out(4px, 4px, 18px, #ccc);
+		ul.main-menu {
+
+			.nav-item {
+				.nav-link {
+					.icon-menu {
+    					background: url(../images/icon-menu-green.svg) no-repeat center;
+					}
+					&[aria-expanded="true"] {
+						.icon-menu{
+							background: url(../images/icon-close-green.svg) no-repeat center;
+						}
+					}
+					&.btn-menu{
+						padding-left: 0;
+						margin-top: 0;
+					}
+
+				}
+
+				&:last-child{
+					.nav-link {
+						margin-top: 0;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-medium) 
+		and (max-width: $device-size-large) 
+{
+	
+}
+
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-small) 
+		and (max-width: $device-size-medium) 
+{
+	
+}
+
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-mobile) 
+		and (max-width: $device-size-small) 
+{
+	
+}
+
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen 
+		and (max-width: $device-size-mobile) 
+{
+	nav{
+		ul.main-menu {
+			.nav-item {
+				.nav-link,  .nav-link[aria-expanded="true"] {
+					i[class*="icon"]{
+						@include setWidthHeight(20px);
+					}
+				}
+			}
+		}
+		
+	}
+}
+

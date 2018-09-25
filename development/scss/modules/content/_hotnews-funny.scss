@@ -1,0 +1,106 @@
+/* ================FUNNY===================== */
+
+.box-funny{
+	.label-head{
+		@include bg-gradient-t2b(#FFD500, #A26700);
+	}
+	.icon-video-camera{
+		@include setBackgroundIcon(25px, '../images/icon-video-camera.svg');
+	}
+
+	.label-news-hot{
+		border-bottom: 0;
+	}
+	.list-news-two-col {
+		.list-news-hori {
+			.list-group-item{
+				&:last-child{
+					border-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+/* =================== RESPONSIVE ======================= */
+
+
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-large) 
+		and (max-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-medium) 
+		and (max-width: $device-size-large) 
+{
+	
+}
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen
+		and (max-width: $device-size-large)
+{
+	
+}
+
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-small) 
+		and (max-width: $device-size-medium) 
+{
+	
+}
+
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-mobile) 
+		and (max-width: $device-size-small) 
+{
+	
+}
+
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen 
+		and (max-width: $device-size-mobile) 
+{
+	
+}
+
+/* ================ END FUNNY===================== */
+

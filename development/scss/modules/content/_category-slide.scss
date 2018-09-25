@@ -1,0 +1,52 @@
+/*============CATEGORY SLIDE TOP PAGE========*/
+.box-slide-category{
+    .label-news-hot {
+      font-size: 2.1rem;
+      font-weight: 900;
+      padding-bottom: .5rem;
+      border-bottom: 5px solid #FF6600;
+      text-align: center;
+      margin-bottom: 1rem;
+      .icon-burn{
+        @include setBackgroundIcon(35px, '../images/icon-fire.png');
+      }
+    }
+
+  &.hotnews-slide {
+    .slide-news{
+      background: transparent;
+    }
+    .owl-nav {
+      .owl-prev, .owl-next{
+        @include shadow-out(4px, 4px, 18px, #ccc);
+      }
+    }
+
+    .icon-view{
+      @include  setBackgroundIcon(16px, "../images/icon-view.svg");
+      vertical-align: middle;
+    }
+    .icon-like{
+      @include  setBackgroundIcon(16px, "../images/icon-like.svg");
+      vertical-align: middle;
+    }
+    .icon-share{
+      @include  setBackgroundIcon(16px, "../images/icon-share.svg");
+      vertical-align: middle;
+    }
+  }
+
+
+  .list-news-focus {
+    .box-item-news{
+      &:last-child{
+        .news-horizontal{
+          border-bottom: none;
+        }
+      }
+    }
+
+  }
+}
+
+/*============END CATEGORY SLIDE TOP PAGE========*/

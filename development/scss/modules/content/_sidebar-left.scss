@@ -1,0 +1,125 @@
+/* ================SIDEBAR LEFT==================== */
+.sidebar-left{
+	position: absolute;
+	top: 0;
+	border-top: 6px solid $color-green;
+	padding-top: 5px;
+	margin-left: -120px;
+	z-index: 10;
+	&.stick{
+		position: fixed;
+		top: 100px;
+	}
+	.menu-sidebar{
+		@include shadow-out(4px, 4px, 18px, #ccc);
+		.list-group-item{
+			border: none;
+			padding: .5rem;
+			font-family: $font-lato;
+			&:after{
+				content:  '';
+				display: block;
+				border-bottom: 1px solid #707070;
+			}
+		}
+		i[class*="icon"]{
+			display: block;
+			margin: auto;
+			margin-bottom: 5px;
+		}
+		.icon-hot{
+			@include setBackgroundIcon(20px, '../images/icon-hot.svg');
+		}
+		.icon-clock{
+			@include setBackgroundIcon(20px, '../images/icon-clock.svg');
+		}
+		.icon-trend-green{
+			@include setBackgroundIcon(20px, '../images/icon-trend-green.svg');
+		}
+		.icon-facebook{
+			@include setBackgroundIcon(20px, '../images/icon-facebook.svg');
+		}
+	}
+}
+
+/* =================== RESPONSIVE ======================= */
+
+
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-large) 
+		and (max-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-medium) 
+		and (max-width: $device-size-large) 
+{
+	
+}
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen
+		and (max-width: $device-size-large)
+{
+	
+}
+
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-small) 
+		and (max-width: $device-size-medium) 
+{
+	
+}
+
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-mobile) 
+		and (max-width: $device-size-small) 
+{
+	
+}
+
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen 
+		and (max-width: $device-size-mobile) 
+{
+	
+}
+
+/* ================ END SIDEBAR LEFT==================== */

@@ -1,0 +1,158 @@
+/* ====================== HOT NEWS RELATED =========================== */
+
+.hotnews-related{
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+}
+
+.list-news-three-col{
+	.list-news-verti{
+		.list-group-item{
+			border: 0;
+			padding: 0;
+			border-bottom: 1px solid $color-gray-border;
+			margin-bottom: 0;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			.title-news-verti{
+				font-size: 1.12rem;
+				font-weight: bold;
+			}
+			.thumb-verti{
+				float: left;
+				margin-right: 1rem;		
+			}
+			&:first-child{
+				.thumb-verti{
+					margin-right: 0;
+					float:  none;
+					img{
+					width: 100%;
+					}		
+				}
+				.title-news-verti{
+					font-size: 1.28rem;
+					padding-bottom: 2rem;
+					padding-top: 1rem;
+				}
+				.time-verti{
+					.icon-calendar{
+						@include setBackgroundIcon(24px, '../images/icon-calendar.svg');
+						margin-right: .2rem;
+						vertical-align: bottom;
+					}
+				}
+			}
+			&:last-child{
+				border-bottom: 0;
+			}
+		}
+		
+	}
+
+	.label-news-related{
+		font-weight: 700;
+		border-bottom: 5px solid $color-green;
+		span{
+			display: inline-block;
+			font-size: 1.42rem;
+    		position: relative;
+			&:after{
+				content:  "";
+				display: inline-block;
+				border-bottom: 5px solid $color-gray-text;
+			    box-sizing: border-box;
+			    height: 5px;
+			    width: 100%;
+			    position: absolute;
+			    left: 0;
+				bottom: -5px;
+				z-index: 10;
+			}
+		}
+		
+	}
+}
+
+
+/* =================== RESPONSIVE ======================= */
+
+
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-large) 
+		and (max-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-medium) 
+		and (max-width: $device-size-large) 
+{
+	
+}
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen
+		and (max-width: $device-size-large)
+{
+	
+}
+
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-small) 
+		and (max-width: $device-size-medium) 
+{
+	
+}
+
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-mobile) 
+		and (max-width: $device-size-small) 
+{
+	
+}
+
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen 
+		and (max-width: $device-size-mobile) 
+{
+	
+}
+
+/* ====================== HOT NEWS RELATED =========================== */

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.313 18.313">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a231;
+      }
+    </style>
+  </defs>
+  <g id="icon-clock" transform="translate(0 0)">
+    <g id="Group_160" data-name="Group 160">
+      <g id="Group_159" data-name="Group 159">
+        <path id="Path_244" data-name="Path 244" class="cls-1" d="M9.156,0a9.156,9.156,0,1,0,9.156,9.156A9.156,9.156,0,0,0,9.156,0Zm.393,17.507V15.9a.393.393,0,1,0-.786,0v1.611A8.367,8.367,0,0,1,.805,9.549H2.416a.393.393,0,1,0,0-.786H.805A8.367,8.367,0,0,1,8.764.805V2.416a.393.393,0,1,0,.786,0V.805a8.367,8.367,0,0,1,7.958,7.958H15.9a.393.393,0,1,0,0,.786h1.614A8.367,8.367,0,0,1,9.549,17.507Z"/>
+      </g>
+    </g>
+    <g id="Group_162" data-name="Group 162" transform="translate(8.764 4.639)">
+      <g id="Group_161" data-name="Group 161">
+        <path id="Path_245" data-name="Path 245" class="cls-1" d="M183.017,102.65l-3.751-3.814V94.873a.393.393,0,1,0-.786,0V99a.393.393,0,0,0,.114.275l3.861,3.928a.393.393,0,1,0,.562-.55Z" transform="translate(-178.48 -94.48)"/>
+      </g>
+    </g>
+  </g>
+</svg>

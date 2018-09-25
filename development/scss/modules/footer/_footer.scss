@@ -1,0 +1,257 @@
+/* ========border bottom=============================== */
+.border-green-bottom{
+	border: 1px dashed $color-green-border;
+	border-left: 0;
+	border-right: 0;
+	padding: 2px;
+}
+/* ================= Tagbar footer==================== */
+.tagbar-footer{
+	background: none;
+	ul.list-tagbar {
+		.nav-item {
+			.nav-link{
+				border: 1px solid $color-green-border;
+			}
+			.box-input-search{
+				position: relative;
+				.btn-search{
+				    position: absolute;
+				    left: 9px;
+				    top: 6px;
+				    @include setBackgroundIcon(20px, '../images/icon-search.svg');
+				}
+				.input-search{
+					@include border-radius(15px);
+				    background: $color-gray-input;
+				    border: none;
+				    font-family: "SegoeUI", sans-serif;
+				    font-size: 1rem;
+				    padding: 5px;
+				    padding-left: 30px;
+				    opacity: .45;
+				    width: 240px;
+				}
+			}
+		}
+	}
+}
+
+/* ============LOGO FOOTER================ */
+.logo-footer{
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+/* ======================FOOTER============== */
+
+footer{
+	background: $color-black;
+	border-top: 2px solid $color-green;
+	padding-top: 100px;
+	padding-bottom: 70px;
+	a, p{
+			color: $color-white;
+		}
+	.box-office{
+		padding-bottom: 40px;		
+		h3{
+			color: $color-green;
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: bold;
+			font-family: $font-title;
+			padding-bottom: 5px;
+		}
+		p{
+			font-family: $font-segoeui;
+			padding-bottom: 5px;
+		}
+		a{
+			display: block;
+		}
+	}
+	.icon-mail{
+		@include setBackgroundIcon(19px, "../images/icon-email.svg");
+		float: left;
+		margin-right: 5px;
+	}
+	.icon-phone{
+		@include setBackgroundIcon(19px, "../images/icon-phone.svg");
+		float: left;
+		margin-right: 5px;
+	}
+
+	.count-like{
+		background: $color-white;
+		padding: 15px;
+		border: 1px solid $color-gray-border;
+		margin-bottom: 10px;
+		.box-logo{
+		    display: inline-block;
+		    width: 70px;
+		    padding: 20px 10px;
+		    border: 1px solid $color-black;
+		    float: left;
+		    margin-right: 15px
+		}
+		.title-news{
+			display: block;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 700;
+			color: $color-green;
+		}
+		.number-like{
+    		display: block;
+    		color: $color-gray-text;
+    		padding-top: 20px;
+		}
+	}
+
+	.btn-like{
+		background: $color-white;
+		display: inline-block;
+		color: $color-black;
+		border: 1px solid $color-gray-border;
+		width: 117px;
+		margin-bottom: 22px;
+		padding: 5px;
+		span{
+			float: left;
+			margin-right: 5px;
+			padding:  3px;
+			background: $color-blue;
+		}
+		.icon-fb{
+			@include setBackgroundIcon(18px, "../images/icon-fb.svg",18px, auto 100%);
+			float: left;
+		}
+	}
+
+
+	.box-newletter{
+		border: 1px solid $color-green;
+		padding: 15px;
+		.nav-link{
+			text-decoration: underline;
+		}
+		.icon-facebook{
+			@include setBackgroundIcon(20px, "../images/icon-facebook.svg",20px, auto 100%);
+			display: block;
+		    margin: auto;	
+		}
+		.icon-messenger{
+			@include setBackgroundIcon(20px, "../images/icon-messenger.svg",20px, auto 100%);
+			display: block;
+		    margin: auto;	
+		}
+		.icon-zalo{
+			@include setBackgroundIcon(20px, "../images/icon-zalo.svg",20px, auto 100%);
+			display: block;
+		    margin: auto;	
+		}
+		.icon-paper-plane{
+			@include setBackgroundIcon(30px, "../images/icon-paper-plane.svg",30px, 100%);
+			float:  left;
+			margin-right: 20px;
+		}
+		.btn-success{
+			@include border-radius(0);
+			background: $color-green;
+		}
+
+	}
+
+}
+
+/* =================== RESPONSIVE ======================= */
+
+
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-large) 
+		and (max-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-medium) 
+		and (max-width: $device-size-large) 
+{
+	
+}
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen
+		and (max-width: $device-size-large)
+{
+	.logo-footer{
+		.logo-kpop{
+			width: 110px;
+		}
+	}
+	.tagbar-footer{
+		.box-search-footer{
+			margin: auto;
+			margin-top: 2rem;
+		}
+	}
+}
+
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-small) 
+		and (max-width: $device-size-medium) 
+{
+	
+}
+
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-mobile) 
+		and (max-width: $device-size-small) 
+{
+	
+}
+
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen 
+		and (max-width: $device-size-mobile) 
+{
+	
+}
+

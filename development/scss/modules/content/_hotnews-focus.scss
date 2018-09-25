@@ -1,0 +1,174 @@
+/* ====================== HOT NEWS FOCUS =========================== */
+
+.box-focus{
+	.label-head{
+		@include bg-gradient-t2b(#FF6600, #FF0000);
+	}
+
+	.icon-video-camera{
+		@include setBackgroundIcon(25px, '../images/icon-video-camera.svg');
+	}
+	.btn-facebook{
+		background:  #22589E;
+		width: 85px;
+		display: inline-block;
+		@include border-radius(5px); 
+		color: $color-white;
+		margin-left: 20px;
+		.icon-facebook{
+			@include setBackgroundIcon(20px, '../images/icon-fb.svg');
+			background-size: auto 100%;
+			vertical-align: middle;
+		}
+	}
+}
+
+.list-news-focus{
+	.icon-video-camera{
+		position: absolute;
+		bottom: 20px;
+		right: 50px;
+	}
+	.news-horizontal{
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		border-bottom: 1px solid $color-gray-border;
+	}
+	.thumb-hori{
+		width: 154px;
+		float: left;
+		margin-right: 1rem;
+	}
+	.set-height-news{
+		height: 111px;
+	}
+	.title-news-hori{
+		font-size: 1.28rem;
+		line-height: 29px;
+		font-weight: 700;
+	}
+	.time-hori{
+		.icon-calendar{
+			@include setBackgroundIcon(20px, "../images/icon-calendar.svg");
+			vertical-align:  middle;
+			margin-bottom: .5rem;
+		}
+	}
+	.category-hori{
+		font-size: 1.28rem;
+		line-height: 20px;
+		font-weight: bold;
+		color:  $color-green;
+	}
+
+}
+
+
+/* =================== RESPONSIVE ======================= */
+
+
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-large) 
+		and (max-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-medium) 
+		and (max-width: $device-size-large) 
+{
+	
+}
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen
+		and (max-width: $device-size-large)
+{
+
+}
+
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-small) 
+		and (max-width: $device-size-medium) 
+{
+	
+}
+
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-mobile) 
+		and (max-width: $device-size-small) 
+{
+	
+}
+
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen 
+		and (max-width: $device-size-mobile) 
+{
+	.list-news-focus {
+		.title-news-hori {
+			line-height: 19px;
+		}
+		.icon-video-camera{
+			bottom: 40px;
+			right: 30px;
+		}
+		.icon-video-camera{
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 320px and down (<320px)
+	================================================================== */
+@media screen
+and (max-width: $device-size-ex-mobile)
+{
+	.list-news-focus {
+		.thumb-hori{
+			width: 130px;
+			line-height: 19px;
+		}
+	}
+}
+
+/* ====================== END HOT NEWS FOCUS =========================== */

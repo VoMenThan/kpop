@@ -1,0 +1,179 @@
+/*================================CSS CONTENT DETAIL================================*/
+
+.box-detail{
+  .label-category{
+    .icon-next-green{
+      @include setBackgroundIcon(20px, "../images/icon-next-green.svg");
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+    .sub-title{
+      font-size: 2.1rem;
+      font-weight: bold;
+      color: $color-gray-text;
+    }
+  }
+
+  h1{
+    font-size: 2.1rem;
+    font-weight: 900;
+  }
+  .info-news{
+    padding: 1rem 0;
+    .name-category{
+      font-size: 1.42rem;
+      color: $color-gray-text;
+      padding-right: 1rem;
+    }
+    .icon-calendar{
+      @include setBackgroundIcon(20px, "../images/icon-calendar.svg");
+      margin-right: 1rem;
+      margin-left: .5rem;
+      vertical-align: middle;
+    }
+    .icon-stopwatch{
+      @include setBackgroundIcon(20px, "../images/icon-stopwatch.svg");
+      margin-right: 1rem;
+      margin-left: .5rem;
+      vertical-align: middle;
+    }
+  }
+
+  .box-related{
+    .title-related{
+      font-size: 1.14rem;
+      font-weight: bold;
+      line-height: 19px;
+      text-transform: uppercase;
+      border-bottom: .5px solid $color-gray-border;
+      padding-bottom: .5rem;
+    }
+    .list-news-related{
+      .item-relate{
+        padding: 5px 0;
+        a{
+          font-weight: bold;
+          line-height: 19px;
+        }
+        .icon-circle{
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          @include border-radius(50%);
+          background: $color-green;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .detail-special{
+    img{
+      padding-bottom: 1rem;
+    }
+    .box-img{
+      .title-img{
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    p{
+      font-size: 1.14rem;
+      &.excerpt{
+        font-weight: bold;
+      }
+      &.excerpt{
+        font-weight: bold;
+      }
+      &.author{
+        font-weight: bold;
+        text-align: right;
+      }
+      .icon-pen{
+        @include setBackgroundIcon(20px, "../images/icon-pen.svg");
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .box-social{
+    a[class*="btn-"]{
+      background: $color-blue;
+     @include border-radius(30px);
+      padding: .3rem 2rem;
+      margin-right: 1rem;
+      color: $color-white;
+      font-weight: bold;
+    }
+    a.btn-zalo{
+      background: #0DC5EB;
+    }
+  }
+
+  .list-tagbar{
+    padding: 1rem 0;
+    .nav-link{
+      @include border-radius(30px);
+      border: 1px solid $color-green;
+    }
+  }
+
+  .title-miss-read{
+    font-size: 1.4rem;
+    padding-bottom: .5rem;
+    border-bottom: 5px solid $color-green;
+    font-weight: bold;
+    .icon-smile{
+      @include setBackgroundIcon(20px, "../images/icon-smile.svg");
+      margin-right: 1rem;
+    }
+  }
+
+
+  .box-title-related{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.14rem;
+    border-bottom: .5px solid $color-gray-border;
+  }
+  .list-news-three-col{
+    .box-content{
+      height: 112px;
+    }
+    .thumb-verti{
+      float: left;
+      margin-right: .5rem;
+    }
+    .title-news-verti{
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+
+  .label-related{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid $color-green;
+    margin-bottom: 1rem;
+  }
+  .news-vertizontal{
+    .thumb-verti{
+      padding-bottom: 1rem;
+    }
+    .title-news-verti{
+      padding-bottom: 1rem;
+    }
+    .time-verti{
+
+    }
+    .icon-calendar{
+      @include setBackgroundIcon(20px, "../images/icon-calendar.svg");
+    }
+    .icon-stopwatch{
+      @include setBackgroundIcon(20px, "../images/icon-stopwatch.svg");
+    }
+  }
+}
+
+/*================================END CSS CONTENT DETAIL================================*/

@@ -1,0 +1,142 @@
+/* =============== RADIO ===================== */
+.box-radio{
+	.video-news{
+		padding-bottom: 1rem;
+		a, .title-video, .excerpt-video, .info-video{
+		color:  $color-white;
+		}
+	}
+	
+	.label-img{
+		position: absolute;
+		top: -41px;
+		left: -28px;
+		z-index: 9;
+	}
+	.info-video{
+		.icon-calendar-white{
+			@include setBackgroundIcon(24px, '../images/icon-calendar-white.svg');
+			margin-right: .2rem;
+		    vertical-align: middle;
+		}
+		.icon-stopwatch-white{
+			@include setBackgroundIcon(24px, '../images/icon-stopwatch-white.svg');
+			margin-right: .2rem;
+			margin-left: 1rem;
+		    vertical-align: middle;
+		}
+	}
+	.list-video{
+		height: 500px;
+	}
+	.box-video-pink{
+		@include bg-gradient-t2b(#FFBFE3, #C982C5);
+		padding-top: 3.5rem;
+		@include border-radius(5px);
+		@include shadow-out(4px, 4px, 18px, #ccc);
+	}
+	.list-group-item{
+		background: transparent;
+		.card{
+			background: transparent;
+		}
+	}
+	.list-video{
+		.mCS-3d.mCSB_scrollTools {
+			.mCSB_dragger {
+				.mCSB_dragger_bar{
+				    background-color: $color-white;
+				}
+			}
+			.mCSB_draggerRail{
+				background-color: #FF00A1;
+			}
+		}
+	}
+}
+
+/* =================== RESPONSIVE ======================= */
+
+
+/* 	================================================================
+	EXTRA LARGE DEVICE
+	Large desktop 1200px and up (1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	LARGE DEVICE
+	Large desktop 992px and up (>992px and <1200px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-large) 
+		and (max-width: $device-size-extra-large) 
+{
+	
+}
+
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 768px and up (>768px and <992px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-medium) 
+		and (max-width: $device-size-large) 
+{
+	
+}
+
+/* 	================================================================
+	MEDIUM DEVICE
+	Large tablet 992px and down (<992px)
+	================================================================== */
+@media screen
+		and (max-width: $device-size-large)
+{
+	
+}
+
+/* 	================================================================
+	SMALL DEVICE
+	Large tablet 576px and up (>576px and <768px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-small) 
+		and (max-width: $device-size-medium) 
+{
+	
+}
+
+/* 	================================================================
+	EXTRA SMALL DEVICE
+	Large mobile 425px and up (>425px and <576px)
+	================================================================== */
+@media screen 
+		and (min-width: $device-size-mobile) 
+		and (max-width: $device-size-small) 
+{
+	
+}
+
+
+/* 	================================================================
+	MOBILE DEVICE
+	Large mobile 425px and down (<425px)
+	================================================================== */
+@media screen 
+		and (max-width: $device-size-mobile) 
+{
+	.box-radio {
+		.list-video{
+			height: 320px;
+		}
+	}
+}
+
+/* =============== END RADIO ===================== */

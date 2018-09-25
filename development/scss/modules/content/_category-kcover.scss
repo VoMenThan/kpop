@@ -1,0 +1,9 @@
+.box-cate-kpop{
+  .list-news-focus {
+    .news-horizontal {
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

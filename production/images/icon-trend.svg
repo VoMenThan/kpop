@@ -1,0 +1,33 @@
+<svg id="icon-trend" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #ff2000;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f60"/>
+      <stop offset="1" stop-color="red"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_572" data-name="Group 572" transform="translate(3.107 6.509)">
+    <path id="Path_632" data-name="Path 632" class="cls-1" d="M121.126,224.376l-.686-1,5.2-3.576,1.769,2.358,5.738-4.016.695.992-6.7,4.688-1.774-2.366Z" transform="translate(-120.44 -217.253)"/>
+    <path id="Path_633" data-name="Path 633" class="cls-1" d="M313.123,204.915h-1.211v-3.233H308.68v-1.211h4.443Z" transform="translate(-299.185 -200.472)"/>
+  </g>
+  <g id="Ellipse_21" data-name="Ellipse 21" class="cls-2" transform="translate(0 0)">
+    <circle class="cls-3" cx="10" cy="10" r="10"/>
+    <circle class="cls-4" cx="10" cy="10" r="9.5"/>
+  </g>
+</svg>

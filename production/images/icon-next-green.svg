@@ -1,0 +1,23 @@
+<svg id="icon-next-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a231;
+      }
+
+      .cls-2 {
+        fill: #56a49e;
+        opacity: 0.37;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_252" data-name="Group 252" transform="translate(0 0)">
+    <path id="Path_383" data-name="Path 383" class="cls-1" d="M9.5,0A9.5,9.5,0,1,1,0,9.5,9.5,9.5,0,0,1,9.5,0Z" transform="translate(0 0)"/>
+    <path id="Path_381" data-name="Path 381" class="cls-2" d="M135.58,126.935l-4.226-6.468-5.677-1.035-3.236,2.625-.742,6.2,4.122,5.494c.21.014.422.022.636.022A9.5,9.5,0,0,0,135.58,126.935Z" transform="translate(-116.957 -114.778)"/>
+    <path id="Path_382" data-name="Path 382" class="cls-3" d="M90.746,84.54a6.206,6.206,0,1,0,6.206,6.206A6.206,6.206,0,0,0,90.746,84.54Zm.387,9.654H88.607l3-3.448-3-3.448h2.525l3,3.448Z" transform="translate(-81.246 -81.246)"/>
+  </g>
+</svg>

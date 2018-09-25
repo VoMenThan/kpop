@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a231;
+        stroke: #00a231;
+        stroke-width: 0.5px;
+      }
+    </style>
+  </defs>
+  <g id="icon-email" transform="translate(0.25 0.25)">
+    <g id="Group_173" data-name="Group 173">
+      <g id="circle_4_">
+        <g id="Group_171" data-name="Group 171">
+          <path id="Path_264" data-name="Path 264" class="cls-1" d="M9.25,0A9.25,9.25,0,1,0,18.5,9.25,9.25,9.25,0,0,0,9.25,0Zm0,17.922A8.672,8.672,0,1,1,17.922,9.25,8.672,8.672,0,0,1,9.25,17.922Z"/>
+        </g>
+      </g>
+      <g id="mail" transform="translate(4.625 6.07)">
+        <g id="Group_172" data-name="Group 172">
+          <path id="Path_265" data-name="Path 265" class="cls-1" d="M24.672,21H16.578a.578.578,0,0,0-.578.578v5.2a.578.578,0,0,0,.578.578h8.094a.578.578,0,0,0,.578-.578v-5.2A.578.578,0,0,0,24.672,21Zm-.519.578-3.528,3.469-3.5-3.469Zm-7.575,5.2V21.869l2.772,2.772-2.176,2.141Zm1.441,0,1.758-1.713.457.456a.578.578,0,0,0,.818,0l.443-.443,1.758,1.7Zm6.653,0h-.56l-2.176-2.141L24.672,21.9Z" transform="translate(-16 -21)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
