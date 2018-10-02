@@ -590,7 +590,6 @@ nav .icon-letter-green { width: 25px; height: 25px; background: url("../images/i
 /*================================CSS CONTENT DETAIL================================*/
 .box-detail .label-category .icon-next-green { width: 20px; height: 20px; background: url("../images/icon-next-green.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: 1rem; margin-left: 1rem; }
 .box-detail .label-category .sub-title { font-size: 2.1rem; font-weight: bold; color: #B7B7B7; }
-.box-detail h1 { font-size: 2.1rem; font-weight: 900; }
 .box-detail .info-news { padding: 1rem 0; }
 .box-detail .info-news .name-category { font-size: 1.42rem; color: #B7B7B7; padding-right: 1rem; }
 .box-detail .info-news .icon-calendar { width: 20px; height: 20px; background: url("../images/icon-calendar.svg") no-repeat center; display: inline-block; background-size: 100%; margin-right: 1rem; margin-left: .5rem; vertical-align: middle; }
@@ -599,13 +598,6 @@ nav .icon-letter-green { width: 25px; height: 25px; background: url("../images/i
 .box-detail .box-related .list-news-related .item-relate { padding: 5px 0; }
 .box-detail .box-related .list-news-related .item-relate a { font-weight: bold; line-height: 19px; }
 .box-detail .box-related .list-news-related .item-relate .icon-circle { display: inline-block; width: 10px; height: 10px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; background: #00A231; margin-right: 5px; }
-.box-detail .detail-special img { padding-bottom: 1rem; }
-.box-detail .detail-special .box-img .title-img { font-weight: bold; text-align: center; }
-.box-detail .detail-special p { font-size: 1.14rem; }
-.box-detail .detail-special p.excerpt { font-weight: bold; }
-.box-detail .detail-special p.excerpt { font-weight: bold; }
-.box-detail .detail-special p.author { font-weight: bold; text-align: right; }
-.box-detail .detail-special p .icon-pen { width: 20px; height: 20px; background: url("../images/icon-pen.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: middle; }
 .box-detail .box-social a[class*="btn-"] { background: #0C5298; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; padding: .3rem 2rem; margin-right: 1rem; color: #fff; font-weight: bold; }
 .box-detail .box-social a.btn-zalo { background: #0DC5EB; }
 .box-detail .list-tagbar { padding: 1rem 0; }

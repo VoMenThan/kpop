@@ -1,0 +1,11 @@
+/*==================CONTENT KPOP======================*/
+.box-detail h1 { font-size: 2.1rem; font-weight: 900; }
+.box-detail .detail-special img { padding-bottom: 1rem; }
+.box-detail .detail-special .box-img .title-img { font-weight: bold; text-align: center; }
+.box-detail .detail-special p { font-size: 1.14rem; }
+.box-detail .detail-special p.excerpt { font-weight: bold; }
+.box-detail .detail-special p.excerpt { font-weight: bold; }
+.box-detail .detail-special p.author { font-weight: bold; text-align: right; }
+.box-detail .detail-special p .icon-pen { width: 20px; height: 20px; background: url("../images/icon-pen.svg") no-repeat center; display: inline-block; background-size: 100%; vertical-align: middle; }
+
+/*==================END CONTENT KPOP======================*/
